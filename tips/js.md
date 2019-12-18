@@ -77,3 +77,19 @@ dateFormat = (timestamp, formats) => {
 
 console.log(dateFormat(date, "Y-m-d"));
 ```
+
+5. 数组排序（sort）
+
+```js
+let objArr = [
+  { name: "test1", age: 20 },
+  { name: "test1", age: 22 },
+  { name: "test1", age: 21 }
+];
+
+// 第一参数a， 第二参数b ---> a-b升序（从小到大）;b-a降序（从大到小），原理就是 两数计算，如果返回的是负数，就保留前者（我可能说的不对，欢迎纠正）
+objArr.sort((a, b) => {
+  return a.age - b.age;
+});
+// 结果会按照年龄从小到大的顺序排列
+```
