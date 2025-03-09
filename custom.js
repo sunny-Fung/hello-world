@@ -1,4 +1,4 @@
-export function addCustomFeature() {
+function addCustomFeature() {
   const table = document.querySelector('.tiny-table');
   const rows = table.querySelectorAll('tbody tr');
 
@@ -15,3 +15,5 @@ export function addCustomFeature() {
     row.appendChild(actionCell);
   });
 }
+
+addCustomFeature()
